@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".FragmentSettings">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="176dp"
+        android:text="Settings"
+        android:textSize="48sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/Line_Settings"
+        android:layout_width="225dp"
+        android:layout_height="3dp"
+        android:background="@color/black"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="86dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/depositphotos_51405259_stock_illustration_male_avatar_profile_picture_use"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="279dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:id="@+id/textView_Name_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textColor="#757575" />
+
+        <TextView
+            android:id="@+id/textView_Email_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email:" />
+
+        <TextView
+            android:id="@+id/textView_Born_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Born:" />
+
+        <TextView
+            android:id="@+id/textView_Last_Online_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last online:" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="105dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="Show as online"
+        app:layout_constraintEnd_toEndOf="@+id/textView_Online"
+        app:layout_constraintStart_toStartOf="@+id/textView_Online"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView_Online"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="225dp"
+        android:background="@drawable/background_online"
+        android:gravity="center"
+        android:text="Online"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="105dp"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="Show as offline"
+        app:layout_constraintEnd_toEndOf="@+id/textView_Offline"
+        app:layout_constraintStart_toStartOf="@+id/textView_Offline"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView_Help"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/help_edit_password_photo"
+        android:gravity="center"
+        android:text="Help"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+    </TextView>
+
+    <View
+        android:id="@+id/Line_Online"
+        android:layout_width="150dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView_Online"
+        app:layout_constraintStart_toStartOf="@+id/textView_Online"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Online" />
+
+    <TextView
+        android:id="@+id/textView_edit_profile"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/help_edit_password_photo"
+        android:gravity="center"
+        android:text="Edit profile"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Online">
+
+    </TextView>
+
+    <View
+        android:id="@+id/Line_Offline"
+        android:layout_width="150dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView_Offline"
+        app:layout_constraintStart_toStartOf="@+id/textView_Offline"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Offline" />
+
+    <TextView
+        android:id="@+id/textView_Change_photo"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/help_edit_password_photo"
+        android:gravity="center"
+        android:text="Change photo"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_edit_profile">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView_Offline"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/background_offline"
+        android:gravity="center"
+        android:text="Offline"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/help_edit_password_photo"
+        android:gravity="center"
+        android:text="Change password"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Change_photo">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView_Back"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/back_save"
+        android:gravity="center"
+        android:text="Back"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Help">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView_Save"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/back_save"
+        android:gravity="center"
+        android:text="Save"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView_Back">
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
